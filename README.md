@@ -24,4 +24,20 @@ There are five feature categories in OSMM topographic layer:
 
 You will need a template for each category.
 
-OSMM ITN contains non-geometric road to road_memeber mapping. I have a different handler for loading this mapping.
+OSMM ITN contains non-geometric road to road_memeber mapping. I have a different handler for loading this mapping, which will be uploaded soon.
+
+To use this mod, please use one of the two jar files in JAR folder in place of the original OpenJump jar file. Normally a feature category in an OSMM topographic layer GML file may be read into an OpenJump FeatureCollection in the following manner:
+
+		DriverProperties dp = new DriverProperties();
+		dp.setProperty("TemplateFile", "your_template.xml");
+		dp.setProperty("DefaultValue", "your_GML.gml");
+		
+		FeatureCollection fc = null;
+		GMLReader gmlReader = new GMLReader();
+		gmlReader.acceptSRID(true);
+		gmlReader.processMultiItems(true);
+		try {
+			fc = gmlReader.read(dp);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
