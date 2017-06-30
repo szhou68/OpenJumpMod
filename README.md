@@ -11,15 +11,23 @@ In a OpenJump GML template, a user can specify collection element, feature eleme
 In case of OSMM, the attribute "fid" is defined as an attribute of feature element so it wouldn't be loaded by the original OpenJump GML reader. Also, the SRID in OSMM is "osgb:BNG" where OpenJump GML assumes a number for SRID.
 
 To address the above issues, three OpenJump classes are modified:
+
 -com.vividsolutions.jump.io.GMLReader
+
 -com.vividsolutions.jump.io.ColumnDescription
+
 -com.vividsolutions.jump.io.GMLInputTemplate
 
 There are five feature categories in OSMM topographic layer:
+
 -TopographicArea
+
 -TopographicLine
+
 -TopographicPoint
+
 -CartographicPoint
+
 -CartographicText
 
 You will need a template for each category. A sample template file for OSMM topographic area features is provided in templates folder. This template loads geometry as well as fid, theme and descriptive group attributes. The latter two may have multiple values which will be returned as a list.
