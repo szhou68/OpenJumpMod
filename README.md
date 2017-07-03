@@ -57,3 +57,5 @@ To use this mod, please use one of the two jar files in JAR folder in place of t
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+
+You may also replace the original jar file in your OpenJump 1.9.1 lib folder with this one and use OpenJump GUI and input xml templates to load OSMM GML files.
