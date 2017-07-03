@@ -18,7 +18,7 @@ To address the above issues, three OpenJump classes are modified:
 
 -com.vividsolutions.jump.io.GMLInputTemplate
 
-There are five feature categories in OSMM topographic layer:
+There are six feature categories in OSMM topographic layer:
 
 -TopographicArea
 
@@ -29,6 +29,8 @@ There are five feature categories in OSMM topographic layer:
 -CartographicPoint
 
 -CartographicText
+
+-BoundaryLine
 
 You will need a template for each category. A sample template file for OSMM topographic area features is provided in templates folder. This template loads geometry as well as fid, theme and descriptive group attributes. The latter two may have multiple values which will be returned as a list.
 
