@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<JCSGMLInputTemplate>
+<CollectionElement>osgb:FeatureCollection</CollectionElement>
+<FeatureElement>osgb:TopographicLine</FeatureElement>
+<GeometryElement>osgb:polyline</GeometryElement>
+<ColumnDefinitions>
+<column>
+<name>Toid</name>
+<type>STRING</type>
+<valueelement elementname='osgb:TopographicLine'/>
+<valuelocation position='attribute' attributeName='fid'/>
+</column>
+<column>
+<name>featureCode</name>
+<type>STRING</type>
+<valueelement elementname='osgb:featureCode'/>
+<valuelocation position='body'/>
+</column>
+<column>
+<name>version</name>
+<type>INTEGER</type>
+<valueelement elementname='osgb:version'/>
+<valuelocation position='body'/>
+</column>
+<column>
+<name>versionDate</name>
+<type>DATE</type>
+<valueelement elementname='osgb:versionDate'/>
+<valuelocation position='body'/>
+</column>
+<column>
+<name>Theme</name>
+<type>OBJECT</type>
+<valueelement elementname='osgb:theme'/>
+<valuelocation position='body'/>
+</column>
+<column>
+<name>accuracyOfPosition</name>
+<type>STRING</type>
+<valueelement elementname='osgb:accuracyOfPosition'/>
+<valuelocation position='body'/>
+</column>
+<column>
+<name>changeHistory</name>
+<type>OBJECT</type>
+<valueelement elementname='osgb:changeHistory'/>
+<valuelocation position='body'/>
+</column>
+<column>
+<name>DescriptiveGroup</name>
+<type>OBJECT</type>
+<valueelement elementname='osgb:descriptiveGroup'/>
+<valuelocation position='body'/>
+</column>
+<column>
+<name>descriptiveTerm</name>
+<type>OBJECT</type>
+<valueelement elementname='osgb:descriptiveTerm'/>
+<valuelocation position='body'/>
+</column>
+<column>
+<name>nonBoundingLine</name>
+<type>STRING</type>
+<valueelement elementname='osgb:nonBoundingLine'/>
+<valuelocation position='body'/>
+</column>
+<column>
+<name>heightAboveDatum</name>
+<type>DOUBLE</type>
+<valueelement elementname='osgb:heightAboveDatum'/>
+<valuelocation position='body'/>
+</column>
+<column>
+<name>heightAboveGroundLevel</name>
+<type>DOUBLE</type>
+<valueelement elementname='osgb:heightAboveGroundLevel'/>
+<valuelocation position='body'/>
+</column>
+<column>
+<name>make</name>
+<type>STRING</type>
+<valueelement elementname='osgb:make'/>
+<valuelocation position='body'/>
+</column>
+<column>
+<name>physicalLevel</name>
+<type>INTEGER</type>
+<valueelement elementname='osgb:physicalLevel'/>
+<valuelocation position='body'/>
+</column>
+<column>
+<name>physicalPresence</name>
+<type>STRING</type>
+<valueelement elementname='osgb:physicalPresence'/>
+<valuelocation position='body'/>
+</column>
+</ColumnDefinitions>
+</JCSGMLInputTemplate>
