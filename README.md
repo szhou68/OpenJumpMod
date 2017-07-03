@@ -32,9 +32,20 @@ There are six feature categories in OSMM topographic layer:
 
 -BoundaryLine
 
-You will need a template for each category. A sample template file for OSMM topographic area features is provided in templates folder. This template loads geometry as well as fid, theme and descriptive group attributes. The latter two may have multiple values which will be returned as a list.
+You will need a template for each category. Sixe sample template files for OSMM topographic layer features are provided in templates folder. 
 
-OSMM ITN contains non-geometric road to road_memeber mapping. I have a different handler for loading this mapping, which will be uploaded soon.
+It should be noted that for feature attributes that allow multiple values, the returned value by OpenJUMP API has type Object, which may either be a simple data value (double, String), or a list of values.
+
+An unaddressed issue is the textRendering attribute for CartographicText features. This attribute contains child attributes whicn can't be loaded properly by current OpenJump GML loader. Below is an example of textRendering attribute value:
+
+<osgb:textRendering>
+<osgb:anchorPosition>2</osgb:anchorPosition>
+<osgb:font>1</osgb:font>
+<osgb:height>3.000</osgb:height>
+<osgb:orientation>0</osgb:orientation>
+</osgb:textRendering>
+
+OSMM ITN contains non-geometric road to road_memeber mapping. I have a different handler for loading this mapping, which will be uploaded to this repo soon.
 
 To use this mod, please use one of the two jar files in JAR folder in place of the original OpenJump jar file. Normally a feature category in an OSMM topographic layer GML file may be read into an OpenJump FeatureCollection in the following manner:
 
