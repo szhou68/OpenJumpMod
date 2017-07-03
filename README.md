@@ -1,4 +1,4 @@
-# OpenJumpMod
+# OpenJump_OSMM_GML_Mod
 
 This repo contains a mod to enable loading Ordnance Survey MasterMap (OSMM) topographic layer GML file via OpenJump API.
 
