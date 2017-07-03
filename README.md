@@ -31,7 +31,7 @@ You will need a template for each category. Sixe sample template files for OSMM 
 
 It should be noted that for feature attributes that allow multiple values, the returned value by OpenJUMP API has type Object, which may either be a simple data value (double, String), or a list of values.
 
-An unaddressed issue is the textRendering attribute for CartographicText features. This attribute contains child attributes whicn can't be loaded properly by current OpenJump GML loader. Below is an example of textRendering attribute value:
+One issue is the textRendering attribute for CartographicText features is a complex attribute which contains four child attributes. OpenJump GML loader can't handle complex attributes so the child attributes have to be loaded individually. Below is an example of textRendering attribute value:
 
 	<osgb:textRendering>
 	<osgb:anchorPosition>2</osgb:anchorPosition>
@@ -42,7 +42,7 @@ An unaddressed issue is the textRendering attribute for CartographicText feature
 
 OSMM ITN contains non-geometric road to road_memeber mapping. I have a different handler for loading this mapping, which will be uploaded to this repo soon.
 
-To use this mod, please use one of the two jar files in JAR folder in place of the original OpenJump jar file. Normally a feature category in an OSMM topographic layer GML file may be read into an OpenJump FeatureCollection in the following manner:
+To use this mod in your JAVA projgramme, please use one of the two jar files in JAR folder in place of the original OpenJump jar file. Normally a feature category in an OSMM topographic layer GML file may be read into an OpenJump FeatureCollection in the following manner:
 
 		DriverProperties dp = new DriverProperties();
 		dp.setProperty("TemplateFile", "your_template.xml");
