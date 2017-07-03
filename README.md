@@ -38,12 +38,12 @@ It should be noted that for feature attributes that allow multiple values, the r
 
 An unaddressed issue is the textRendering attribute for CartographicText features. This attribute contains child attributes whicn can't be loaded properly by current OpenJump GML loader. Below is an example of textRendering attribute value:
 
-<osgb:textRendering>
-<osgb:anchorPosition>2</osgb:anchorPosition>
-<osgb:font>1</osgb:font>
-<osgb:height>3.000</osgb:height>
-<osgb:orientation>0</osgb:orientation>
-</osgb:textRendering>
+	<osgb:textRendering>
+	<osgb:anchorPosition>2</osgb:anchorPosition>
+	<osgb:font>1</osgb:font>
+	<osgb:height>3.000</osgb:height>
+	<osgb:orientation>0</osgb:orientation>
+	</osgb:textRendering>
 
 OSMM ITN contains non-geometric road to road_memeber mapping. I have a different handler for loading this mapping, which will be uploaded to this repo soon.
 
