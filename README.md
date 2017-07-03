@@ -21,16 +21,11 @@ To address the above issues, three OpenJump classes are modified:
 There are six feature categories in OSMM topographic layer:
 
 - TopographicArea
-
 - TopographicLine
-
 - TopographicPoint
-
 - CartographicPoint
-
 - CartographicText
-
--BoundaryLine
+- BoundaryLine
 
 You will need a template for each category. Sixe sample template files for OSMM topographic layer features are provided in templates folder. 
 
