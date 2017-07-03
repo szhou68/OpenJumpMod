@@ -12,23 +12,23 @@ In case of OSMM, the attribute "fid" is defined as an attribute of feature eleme
 
 To address the above issues, three OpenJump classes are modified:
 
--com.vividsolutions.jump.io.GMLReader
+- com.vividsolutions.jump.io.GMLReader
 
--com.vividsolutions.jump.io.ColumnDescription
+- com.vividsolutions.jump.io.ColumnDescription
 
--com.vividsolutions.jump.io.GMLInputTemplate
+- com.vividsolutions.jump.io.GMLInputTemplate
 
 There are six feature categories in OSMM topographic layer:
 
--TopographicArea
+- TopographicArea
 
--TopographicLine
+- TopographicLine
 
--TopographicPoint
+- TopographicPoint
 
--CartographicPoint
+- CartographicPoint
 
--CartographicText
+- CartographicText
 
 -BoundaryLine
 
