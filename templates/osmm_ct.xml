@@ -71,9 +71,27 @@
 <valuelocation position='body'/>
 </column>
 <column>
-<name>textRendering</name>
-<type>OBJECT</type>
-<valueelement elementname='osgb:textRendering'/>
+<name>anchorPosition</name>
+<type>INTEGER</type>
+<valueelement elementname='osgb:anchorPosition'/>
+<valuelocation position='body'/>
+</column>
+<column>
+<name>font</name>
+<type>INTEGER</type>
+<valueelement elementname='osgb:font'/>
+<valuelocation position='body'/>
+</column>
+<column>
+<name>height</name>
+<type>DOUBLE</type>
+<valueelement elementname='osgb:height'/>
+<valuelocation position='body'/>
+</column>
+<column>
+<name>orientation</name>
+<type>INTEGER</type>
+<valueelement elementname='osgb:orientation'/>
 <valuelocation position='body'/>
 </column>
 <column>
