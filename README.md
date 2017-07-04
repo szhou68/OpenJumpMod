@@ -2,7 +2,7 @@
 
 This repo contains a mod to enable loading Ordnance Survey MasterMap (OSMM) topographic layer GML file via OpenJump API.
 
-OpenJump provides an mechnism to load gml via user-specified xml templates (http://ojwiki.soldin.de/index.php?title=Working_with_GML). 
+OpenJump provides a mechnism to load gml via user-specified xml templates (http://ojwiki.soldin.de/index.php?title=Working_with_GML). 
 
 In a OpenJump GML template, a user can specify collection element, feature element, geometry element and define columns for various feature attributes. It seems, however, there are a few restrictions:
 - Columns defined as feature element attributes are not loaded; 
