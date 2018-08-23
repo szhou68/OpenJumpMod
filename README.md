@@ -42,7 +42,7 @@ One issue is the textRendering attribute for CartographicText features is a comp
 
 OSMM ITN contains non-geometric road to road_memeber mapping. I have a different handler for loading this mapping. Hopefully I will upload it to this repo soon.
 
-To use this mod in your JAVA projgramme, please use one of the two jar files in JAR folder in place of the original OpenJump jar file. Normally a feature category in an OSMM topographic layer GML file may be read into an OpenJump FeatureCollection in the following manner:
+To use this mod in your JAVA programme, please use one of the two jar files in JAR folder in place of the original OpenJump jar file. Normally a feature category in an OSMM topographic layer GML file may be read into an OpenJump FeatureCollection in the following manner:
 
 		DriverProperties dp = new DriverProperties();
 		dp.setProperty("TemplateFile", "your_template.xml");
